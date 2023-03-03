@@ -15,11 +15,19 @@ let package = Package(
         )
     ],
     dependencies: [
+        .package(
+            url: "https://github.com/apple/swift-argument-parser.git",
+            .upToNextMajor(from: "1.2.2")
+        ),
     ],
     targets: [
         .executableTarget(
             name: "ProjectManager",
             dependencies: [
+                .product(
+                    name: "ArgumentParser",
+                    package: "swift-argument-parser"
+                )
             ]
         ),
         .testTarget(
