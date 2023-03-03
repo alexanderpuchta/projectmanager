@@ -10,7 +10,7 @@ let package = Package(
     ],
     products: [
         .executable(
-            name: "projectmanager",
+            name: "ProjectManager",
             targets: ["ProjectManager"]
         )
     ],
