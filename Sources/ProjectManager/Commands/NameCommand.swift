@@ -1,3 +1,7 @@
+//
+//  Copyright © 2023 alexanderpuchta.de -  All rights reserved.
+//
+
 import ArgumentParser
 
 struct Name: ParsableCommand {
